@@ -1,0 +1,8 @@
+typings
+!typings/fast-json-patch
+!typings/tsd.d.ts
+app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+bower_components

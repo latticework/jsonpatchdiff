@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <!-- https://matthewphillips.info/posts/using-npm-with-systemjs.html --> 
+  <script src="config.js"></script>
+  <script src="node_modules/fast-json-patch/src/json-patch-duplex.js"></script>
+  <script>
+      System.import('app/boot').then(null, console.error.bind(console));
+  </script>
+  <!--<script>
+      System.import("package.json!npm").then(function(){
+          System.import("app/boot");
+      }).then(null, console.error.bind(console));
+  </script>-->
+  <!--<script>
+      System
+      .import('package.json!npm')
+      .then(function(){
+        System.import('app/boot')
+      })
+      .then(null, console.error.bind(console));
+  </script>-->
+</head>
+<body>
+  <my-app>Loading...</my-app>
+</body>
+
+</html>

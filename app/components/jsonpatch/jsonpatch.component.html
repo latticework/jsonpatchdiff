@@ -1,0 +1,24 @@
+<div class="jsonpatch">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <textarea id="left-json-text" [(ngModel)]="leftJsonText"></textarea>
+        </td>
+        <td>
+          <textarea id="right-json-text" [(ngModel)]="rightJsonText"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" (click)="compare()">Compare</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea id="json-patch-text" [(ngModel)]="jsonPatchText"></textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
